@@ -6,6 +6,11 @@
  *
  */
 
+//Code
+
+function total(arr){
+	return arr.reduce((acc,cur)=>acc + cur,0);
+}
 
 //* Begin of tests
 const assert = require('assert')

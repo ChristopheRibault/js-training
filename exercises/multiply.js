@@ -10,6 +10,16 @@
 
 // Your code :
 
+function multiply(x, y){
+	var tot = 0, var isPos = (x>=0&&y>=0)||(x<0&&y<0)
+	x = x<0?-x:x;
+	y = y<0?-y:y;
+	for (var i = 1; i<=y; i++){
+		tot+= x;
+	}
+	return isPos?tot:-tot;
+}
+
 //* Begin of tests
 const assert = require('assert')
 

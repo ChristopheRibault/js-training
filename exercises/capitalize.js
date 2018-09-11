@@ -7,6 +7,12 @@
  *
  */
 
+//Code
+
+function capitalize(x){
+	return x.split('').map((v,i)=>i==0?v.toUpperCase():v.toLowerCase()).join('');
+}
+
 
 //* Begin of tests
 const assert = require('assert')

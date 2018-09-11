@@ -9,6 +9,10 @@
 
 // Your code :
 
+function sameSign(a, b){
+	return a*b>0||(a==0&&b==0);
+}
+
 //* Begin of tests
 const assert = require('assert')
 

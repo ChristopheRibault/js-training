@@ -6,6 +6,10 @@
  *
  */
 
+function yell(str){
+	return str.toUpperCase();
+}
+
 
 //* Begin of tests
 const assert = require('assert')

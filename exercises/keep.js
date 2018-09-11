@@ -12,6 +12,20 @@
  *
  */
 
+//Code
+
+function keepFirst(x){
+	return x.splice(0, 2);
+}
+
+function keepLast(x){
+	return x.splice(-2, 2);
+}
+
+function keepFirstLast(x){
+	return x.splice(2, 2);
+}
+
 
 //* Begin of tests
 const assert = require('assert')

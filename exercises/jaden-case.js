@@ -10,6 +10,11 @@
  *
  */
 
+//Code
+
+function jadenCase(x){
+	return x.split('').map((v,i,t)=>i==0||t[i-1]===' '?v.toUpperCase():v).join('');
+}
 
 
 //* Begin of tests

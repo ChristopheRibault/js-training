@@ -10,6 +10,23 @@
  * https://github.com/nan-academy/refs/blob/master/js-training/methods.md#string---transform
  */
 
+//Code
+
+function cutFirst(x){
+	x.splice(0, 2);
+	return x;
+}
+
+function cutLast(x){
+	x.splice(-2, 2);
+	return x;
+}
+
+function cutFirstLast (x){
+	return cutFirst(cutLast(x));
+}
+
+
 //* Begin of tests
 const assert = require('assert')
 
