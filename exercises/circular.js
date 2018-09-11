@@ -9,8 +9,8 @@
 
 // Your code :
 
-var circular = {
-	circular : circular;
+const circular = {
+	circular : circular
 }
 
 //* Begin of tests
