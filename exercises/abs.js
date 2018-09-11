@@ -12,7 +12,7 @@
 // Your code :
 
 function abs(x){
-	return x<O?-x:x;
+	return x<0?-x:x;
 }
 
 //* Begin of tests

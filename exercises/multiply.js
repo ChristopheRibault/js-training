@@ -11,10 +11,11 @@
 // Your code :
 
 function multiply(x, y){
-	var tot = 0, var isPos = (x>=0&&y>=0)||(x<0&&y<0)
+	if (x==0||y==0) return 0;
+	let tot = 0, isPos = (x>=0&&y>=0)||(x<0&&y<0);
 	x = x<0?-x:x;
 	y = y<0?-y:y;
-	for (var i = 1; i<=y; i++){
+	for (let i = 1; i<=y; i++){
 		tot+= x;
 	}
 	return isPos?tot:-tot;
