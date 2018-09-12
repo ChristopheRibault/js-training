@@ -11,17 +11,19 @@
 
 // Your code :
 
-function multiply (x, y){
-	if (x==0||y==0) return 0;
-	let tot = 0, i = 0, isPos = (x>0&&y>0)||(x<0&&y<0);
-	x = x<0?-x:x;
-	y = y<0?-y:y;
-
-	function sum (x){	
-		tot += x;
-		i++;
+function multiply(x, y){
+	if(x === 0 || y === 0)
+		return 0;
+	if(x < 0){
+		x =- x;
+		y =- y;
 	}
-	return i==y?(isPos?tot:-tot):sum(x);
+	let result = 0;
+	if(x > 0){
+		x--;
+		result = y;
+		return result + multiply(x, y);
+	}
 }
 
 //* Begin of tests
