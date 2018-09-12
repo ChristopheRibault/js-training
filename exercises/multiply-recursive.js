@@ -11,6 +11,19 @@
 
 // Your code :
 
+function multiply (x, y){
+	if (x==0||y==0) return 0;
+	let tot = 0, i = 0, isPos = (x>0&&y>0)||(x<0&&y<0);
+	x = x<0?-x:x;
+	y = y<0?-y:y;
+
+	function sum (x){	
+		tot += x;
+		i++;
+	}
+	return i==y?(isPos?tot:-tot):sum(x);
+}
+
 //* Begin of tests
 const assert = require('assert')
 

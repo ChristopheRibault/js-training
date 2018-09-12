@@ -9,7 +9,7 @@
 
 // Your code :
 
-function getLenght(x){
+function getLength(x){
 	return x.length;
 }
 

@@ -20,5 +20,9 @@ function jadenCase(x){
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, 'function')
+assert.strictEqual(jadenCase.length, 1)
+assert.strictEqual(jadenCase("coucou c'est nous"),"Coucou C'est Nous")
+assert.strictEqual(jadenCase("str"),"Str")
+assert.strictEqual(jadenCase("hello WORLD"),"Hello WORLD")
 // End of tests */
